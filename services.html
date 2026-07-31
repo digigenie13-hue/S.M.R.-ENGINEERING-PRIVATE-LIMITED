@@ -90,13 +90,25 @@
            PAGE 1: PREMIUM HERO SECTION
            ========================================================================== */
         .hero-services {
-            position: relative; height: 60vh; min-height: 500px;
-            display: flex; align-items: center; justify-content: center; overflow: hidden;
+            position: relative; 
+            height: 60vh; 
+            min-height: 500px;
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            overflow: hidden;
+            
+            /* ADDED BACKGROUND IMAGE HERE */
             background-color: var(--navy);
+            background-image: url('service.png');
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed; /* Optional: adds a slight parallax effect */
         }
         .hero-overlay {
             position: absolute; inset: 0;
-            background: linear-gradient(135deg, rgba(10,35,66,.8) 0%, rgba(10,35,66,.9) 100%); z-index: 1;
+            background: linear-gradient(135deg, rgba(10,35,66,.85) 0%, rgba(10,35,66,.95) 100%); z-index: 1;
         }
         .blueprint-bg {
             position: absolute; top: 0; left: 0; width: 100%; height: 100%;
